@@ -135,7 +135,7 @@ const TransactionListTable = (props) => {
                 label:i18n('common.view'),
                 onClick:()=>doOpen(record.id),
                 key: '1',
-                icon:(<EyeOutlined rev={undefined}  />),
+                icon:(<EyeOutlined   />),
               },
               {
                 label: (
@@ -150,7 +150,7 @@ const TransactionListTable = (props) => {
                   </Popconfirm>
                 ),
                 disabled:!hasPermissionToDestroy,
-                icon:(<DeleteOutlined rev={undefined}  />),
+                icon:(<DeleteOutlined   />),
                 key: '2',
               },
             ],
@@ -158,7 +158,7 @@ const TransactionListTable = (props) => {
         }
           >
             <Button>
-            {i18n('common.actions')} <DownOutlined rev={undefined}  />
+            {i18n('common.actions')} <DownOutlined   />
             </Button>
               </Dropdown>
               <Drawer

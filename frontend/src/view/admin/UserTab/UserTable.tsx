@@ -79,7 +79,7 @@ const UserTable = (props) => {
             icon={
               record.avatars &&
               record.avatars.length ? undefined : (
-                <UserOutlined rev={undefined}  />
+                <UserOutlined   />
               )
             }
           />
@@ -128,7 +128,7 @@ const UserTable = (props) => {
             >
                <Button
                   type="primary"
-                  icon={ <DeleteOutlined rev={undefined}  />}
+                  icon={ <DeleteOutlined   />}
                   danger
                 />
             </Popconfirm>

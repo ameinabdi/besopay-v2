@@ -73,14 +73,14 @@ const CountryListTable = (props) => {
           <Link to={`/country/${record.id}`}>
             <Button
             type="primary"
-            icon={ <EyeOutlined rev={undefined}  />}
+            icon={ <EyeOutlined   />}
           />
           </Link>
           {hasPermissionToEdit && (
             <Link to={`/country/${record.id}/edit`}>
              <Button
             type="primary"
-            icon={ <EditOutlined rev={undefined}  />}
+            icon={ <EditOutlined   />}
           />
           </Link>
           )}
@@ -93,7 +93,7 @@ const CountryListTable = (props) => {
             >
                <Button
                   type="primary"
-                  icon={ <DeleteOutlined rev={undefined}  />}
+                  icon={ <DeleteOutlined   />}
                   danger
                 />
             </Popconfirm>

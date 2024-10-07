@@ -41,10 +41,10 @@ export default function AccountItem() {
         selectors.selectRoles,
       );
     const items: MenuItem[] = [
-        getItem('Account Center', '/account-center', <SettingOutlined rev={undefined} />, ),
-        getItem('Change Password', '/password-change', <LockOutlined rev={undefined}  />, ),
-        getItem('Workspace', '/tenant', <AppstoreOutlined rev={undefined}  />, ),
-        getItem('Admin Area', '/admin-area', <ControlOutlined rev={undefined}  />, ),
+        getItem('Account Center', '/account-center', <SettingOutlined  />, ),
+        getItem('Change Password', '/password-change', <LockOutlined   />, ),
+        getItem('Workspace', '/tenant', <AppstoreOutlined   />, ),
+        getItem('Admin Area', '/admin-area', <ControlOutlined   />, ),
         
       ];
 
@@ -62,7 +62,7 @@ export default function AccountItem() {
                 alt="avatar"
                 icon={
                   userDropdownAvatar ? undefined : (
-                    <UserOutlined rev={undefined}  />
+                    <UserOutlined   />
                   )
                 }
               />
@@ -73,7 +73,7 @@ export default function AccountItem() {
         {currentUser?.phoneNumber && (
           <p>
           <ContactsOutlined
-            rev={undefined}
+            
             style={{
               marginRight: 8,
             }}
@@ -84,7 +84,7 @@ export default function AccountItem() {
         {currentTenant?.name && (
           <p>
           <ClusterOutlined
-            rev={undefined}
+            
             style={{
               marginRight: 8,
             }}
@@ -95,7 +95,7 @@ export default function AccountItem() {
         {currentUser.email && (
           <p>
           <TagOutlined
-            rev={undefined}
+            
             style={{
               marginRight: 8,
             }}

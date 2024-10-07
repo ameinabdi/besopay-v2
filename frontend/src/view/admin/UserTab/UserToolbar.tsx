@@ -72,7 +72,7 @@ const UserToolbar = (props) => {
     const button = (
       <Button
         disabled={disabled}
-        icon={<FileExcelOutlined rev={undefined}  />}
+        icon={<FileExcelOutlined   />}
         onClick={doExport}
         loading={exportLoading}
       >
@@ -101,7 +101,7 @@ const UserToolbar = (props) => {
       <Button
         disabled={disabled}
         type="primary"
-        icon={<DeleteOutlined rev={undefined}  />}
+        icon={<DeleteOutlined   />}
         onClick={doDestroyAllSelected}
       >
         {i18n('common.destroy')}
@@ -122,14 +122,14 @@ const UserToolbar = (props) => {
   return (
     <Toolbar>
       {hasUserToCreate && (
-          <Button type="primary" icon={<PlusOutlined rev={undefined} />} onClick={doOpenModal}>
+          <Button type="primary" icon={<PlusOutlined  />} onClick={doOpenModal}>
           {i18n('user.invite')}
           </Button>
       )}
 
       {hasUserToImport && (
         <Link to="/user/importer">
-          <Button type="primary" icon={<ImportOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<ImportOutlined   />}>
             {i18n('common.import')}
           </Button>
         </Link>
@@ -139,7 +139,7 @@ const UserToolbar = (props) => {
 
       {hasUserToAuditLogs && (
         <Link to="/audit-logs?entityNames=user">
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>

@@ -53,7 +53,7 @@ const PermissionToolbar = (props) => {
     const button = (
       <Button
         disabled={disabled}
-        icon={<FileExcelOutlined rev={undefined}  />}
+        icon={<FileExcelOutlined   />}
         onClick={doExport}
         loading={exportLoading}
       >
@@ -83,7 +83,7 @@ const PermissionToolbar = (props) => {
         disabled={disabled}
         loading={destroyLoading}
         type="primary"
-        icon={<DeleteOutlined rev={undefined}  />}
+        icon={<DeleteOutlined   />}
       >
         {i18n('common.destroy')}
       </Button>
@@ -115,7 +115,7 @@ const PermissionToolbar = (props) => {
 
       {hasPermissionToImport && (
         <Link to="/permission/importer">
-          <Button type="primary" icon={<UploadOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<UploadOutlined   />}>
             {i18n('common.import')}
           </Button>
         </Link>
@@ -125,7 +125,7 @@ const PermissionToolbar = (props) => {
 
       {hasPermissionToAuditLogs && (
         <Link to="/audit-logs?entityNames=permission">
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>

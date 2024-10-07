@@ -45,7 +45,7 @@ const PermissionViewToolbar = (props) => {
     <Toolbar>
       {hasPermissionToEdit && (
         <Link to={`/permission/${id}/edit`}>
-          <Button type="primary" icon={<EditOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<EditOutlined   />}>
             {i18n('common.edit')}
           </Button>
         </Link>
@@ -60,7 +60,7 @@ const PermissionViewToolbar = (props) => {
         >
           <Button
             type="primary"
-            icon={<DeleteOutlined rev={undefined}  />}
+            icon={<DeleteOutlined   />}
             disabled={destroyLoading}
           >
             {i18n('common.destroy')}
@@ -74,7 +74,7 @@ const PermissionViewToolbar = (props) => {
             id,
           )}`}
         >
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>

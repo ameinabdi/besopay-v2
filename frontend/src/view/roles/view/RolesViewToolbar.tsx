@@ -47,7 +47,7 @@ const RolesViewToolbar = (props) => {
     <Toolbar>
       {hasRolesToEdit && (
         <Link to={`/roles/${id}/edit`}>
-          <Button type="primary" icon={<EditOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<EditOutlined   />}>
             {i18n('common.edit')}
           </Button>
         </Link>
@@ -62,7 +62,7 @@ const RolesViewToolbar = (props) => {
         >
           <Button
             type="primary"
-            icon={<DeleteOutlined rev={undefined}  />}
+            icon={<DeleteOutlined   />}
             disabled={destroyLoading}
           >
             {i18n('common.destroy')}
@@ -76,7 +76,7 @@ const RolesViewToolbar = (props) => {
             id,
           )}`}
         >
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>

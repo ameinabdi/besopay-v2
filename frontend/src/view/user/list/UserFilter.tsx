@@ -181,7 +181,7 @@ const UserFilter = (props) => {
                 <Col className="filter-buttons" span={24}>
                   <Button
                     loading={loading}
-                    icon={<SearchOutlined rev={undefined}  />}
+                    icon={<SearchOutlined   />}
                     type="primary"
                     htmlType="submit"
                   >
@@ -190,7 +190,7 @@ const UserFilter = (props) => {
                   <Button
                     loading={loading}
                     onClick={onReset}
-                    icon={<UndoOutlined rev={undefined}  />}
+                    icon={<UndoOutlined   />}
                   >
                     {i18n('common.reset')}
                   </Button>

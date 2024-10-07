@@ -98,14 +98,14 @@ const RolesListTable = (props) => {
           <Link to={`/roles/${record.id}`}>
              <Button
             type="primary" size="small"
-            icon={ <EyeOutlined rev={undefined}  />}
+            icon={ <EyeOutlined   />}
           />
           </Link>
           {hasRolesToEdit && (
             <Link to={`/roles/${record.id}/edit`}>
              <Button
             type="primary"  size="small"
-            icon={ <EditOutlined rev={undefined}  />}
+            icon={ <EditOutlined   />}
           />
           </Link>
           )}
@@ -118,7 +118,7 @@ const RolesListTable = (props) => {
             >
               <Button
                   type="primary" size="small"
-                  icon={ <DeleteOutlined rev={undefined}  />}
+                  icon={ <DeleteOutlined   />}
                   danger
                 />
             </Popconfirm>

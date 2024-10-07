@@ -65,7 +65,7 @@ const UserTable = (props) => {
             icon={
               record.avatars &&
               record.avatars.length ? undefined : (
-                <UserOutlined rev={undefined}  />
+                <UserOutlined   />
               )
             }
           />
@@ -127,14 +127,14 @@ const UserTable = (props) => {
           <Link to={`/user/${record.id}`}>
             <Button
             type="primary"
-            icon={ <EyeOutlined rev={undefined}  />}
+            icon={ <EyeOutlined   />}
           />
           </Link>
           {hasPermissionToEdit && (
             <Link to={`/user/${record.id}/edit`}>
              <Button
             type="primary"
-            icon={ <EditOutlined rev={undefined}  />}
+            icon={ <EditOutlined   />}
           />
           </Link>
           )}
@@ -147,7 +147,7 @@ const UserTable = (props) => {
             >
                <Button
                   type="primary"
-                  icon={ <DeleteOutlined rev={undefined}  />}
+                  icon={ <DeleteOutlined   />}
                   danger
                 />
             </Popconfirm>

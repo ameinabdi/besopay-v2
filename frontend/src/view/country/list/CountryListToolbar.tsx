@@ -58,7 +58,7 @@ const CountryToolbar = (props) => {
     const button = (
       <Button
         disabled={disabled}
-        icon={<FileExcelOutlined rev={undefined}  />}
+        icon={<FileExcelOutlined   />}
         onClick={doExport}
         loading={exportLoading}
       >
@@ -88,7 +88,7 @@ const CountryToolbar = (props) => {
         disabled={disabled}
         loading={destroyLoading}
         type="primary"
-        icon={<DeleteOutlined rev={undefined}  />}
+        icon={<DeleteOutlined   />}
       >
         {i18n('common.destroy')}
       </Button>
@@ -119,7 +119,7 @@ const CountryToolbar = (props) => {
     <Toolbar>
       {hasPermissionToCreate && (
         <Link to="/country/new">
-          <Button type="primary" icon={<PlusOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<PlusOutlined   />}>
             {i18n('common.new')}
           </Button>
         </Link>
@@ -127,7 +127,7 @@ const CountryToolbar = (props) => {
 
       {hasPermissionToImport && (
         <Link to="/country/importer">
-          <Button type="primary" icon={<UploadOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<UploadOutlined   />}>
             {i18n('common.import')}
           </Button>
         </Link>
@@ -137,7 +137,7 @@ const CountryToolbar = (props) => {
 
       {hasPermissionToAuditLogs && (
         <Link to="/audit-logs?entityNames=country">
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>

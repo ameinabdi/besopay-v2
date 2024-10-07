@@ -106,7 +106,7 @@ const RolesForm = (props) => {
               loading={saveLoading}
               type="primary"
               onClick={form.handleSubmit(onSubmit)}
-              icon={<SaveOutlined rev={undefined}  />}
+              icon={<SaveOutlined   />}
             >
               {i18n('common.save')}
             </Button>
@@ -114,7 +114,7 @@ const RolesForm = (props) => {
             <Button
               disabled={saveLoading}
               onClick={onReset}
-              icon={<UndoOutlined rev={undefined}  />}
+              icon={<UndoOutlined   />}
             >
               {i18n('common.reset')}
             </Button>
@@ -123,7 +123,7 @@ const RolesForm = (props) => {
               <Button
                 disabled={saveLoading}
                 onClick={() => props.onCancel()}
-                icon={<CloseOutlined rev={undefined}  />}
+                icon={<CloseOutlined   />}
               >
                 {i18n('common.cancel')}
               </Button>

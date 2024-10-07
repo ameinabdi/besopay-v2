@@ -31,7 +31,7 @@ const UserViewToolbar = () => {
     <Toolbar>
       {hasPermissionToEdit && (
         <Link to={`/user/${id}/edit`}>
-          <Button type="primary" icon={<EditOutlined rev={undefined}  />}>
+          <Button type="primary" icon={<EditOutlined   />}>
             {i18n('common.edit')}
           </Button>
         </Link>
@@ -43,7 +43,7 @@ const UserViewToolbar = () => {
             id,
           )}`}
         >
-          <Button icon={<FileSearchOutlined rev={undefined}  />}>
+          <Button icon={<FileSearchOutlined   />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>
@@ -55,7 +55,7 @@ const UserViewToolbar = () => {
             user.email,
           )}`}
         >
-          <Button icon={<EyeOutlined rev={undefined}  />}>
+          <Button icon={<EyeOutlined   />}>
             {i18n('user.view.activity')}
           </Button>
         </Link>

@@ -69,7 +69,7 @@ const RolesToolbar = (props) => {
     const button = (
       <Button
         disabled={disabled}
-        icon={<FileExcelOutlined rev={undefined} />}
+        icon={<FileExcelOutlined  />}
         onClick={doExport}
         loading={exportLoading}
       >
@@ -99,7 +99,7 @@ const RolesToolbar = (props) => {
         disabled={disabled}
         loading={destroyLoading}
         type="primary"
-        icon={<DeleteOutlined rev={undefined} />}
+        icon={<DeleteOutlined  />}
       >
         {i18n('common.destroy')}
       </Button>
@@ -129,14 +129,14 @@ const RolesToolbar = (props) => {
   return (
     <Toolbar>
       {hasRolesToCreate && (
-          <Button type="primary" icon={<PlusOutlined rev={undefined} />} onClick={doOpenModal}>
+          <Button type="primary" icon={<PlusOutlined  />} onClick={doOpenModal}>
             {i18n('common.new')}
           </Button>
       )}
       {renderDestroyButton()}
       {hasRolesToAuditLogs && (
         <Link to="/audit-logs?entityNames=roles">
-          <Button icon={<FileSearchOutlined rev={undefined} />}>
+          <Button icon={<FileSearchOutlined  />}>
             {i18n('auditLog.menu')}
           </Button>
         </Link>
