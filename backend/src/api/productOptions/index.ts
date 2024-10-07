@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/product-options`,
+    require('./productOptionsCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/product-options/:id`,
+    require('./productOptionsUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/product-options/import`,
+    require('./productOptionsImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/product-options`,
+    require('./productOptionsDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/product-options/autocomplete`,
+    require('./productOptionsAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/product-options`,
+    require('./productOptionsList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/product-options/:id`,
+    require('./productOptionsFind').default,
+  );
+};

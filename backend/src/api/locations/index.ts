@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/locations`,
+    require('./locationsCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/locations/:id`,
+    require('./locationsUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/locations/import`,
+    require('./locationsImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/locations`,
+    require('./locationsDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/locations/autocomplete`,
+    require('./locationsAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/locations`,
+    require('./locationsList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/locations/:id`,
+    require('./locationsFind').default,
+  );
+};

@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/business-accounts`,
+    require('./businessAccountsCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/business-accounts/:id`,
+    require('./businessAccountsUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/business-accounts/import`,
+    require('./businessAccountsImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/business-accounts`,
+    require('./businessAccountsDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/business-accounts/autocomplete`,
+    require('./businessAccountsAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/business-accounts`,
+    require('./businessAccountsList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/business-accounts/:id`,
+    require('./businessAccountsFind').default,
+  );
+};

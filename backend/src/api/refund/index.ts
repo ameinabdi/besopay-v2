@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/refund`,
+    require('./refundCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/refund/:id`,
+    require('./refundUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/refund/import`,
+    require('./refundImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/refund`,
+    require('./refundDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/refund/autocomplete`,
+    require('./refundAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/refund`,
+    require('./refundList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/refund/:id`,
+    require('./refundFind').default,
+  );
+};

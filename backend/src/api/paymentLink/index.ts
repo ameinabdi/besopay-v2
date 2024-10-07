@@ -1,0 +1,30 @@
+export default (app) => {
+  app.post(
+    `/tenant/:tenantId/payment-link`,
+    require('./paymentLinkCreate').default,
+  );
+  app.put(
+    `/tenant/:tenantId/payment-link/:id`,
+    require('./paymentLinkUpdate').default,
+  );
+  app.post(
+    `/tenant/:tenantId/payment-link/import`,
+    require('./paymentLinkImport').default,
+  );
+  app.delete(
+    `/tenant/:tenantId/payment-link`,
+    require('./paymentLinkDestroy').default,
+  );
+  app.get(
+    `/tenant/:tenantId/payment-link/autocomplete`,
+    require('./paymentLinkAutocomplete').default,
+  );
+  app.get(
+    `/tenant/:tenantId/payment-link`,
+    require('./paymentLinkList').default,
+  );
+  app.get(
+    `/tenant/:tenantId/payment-link/:id`,
+    require('./paymentLinkFind').default,
+  );
+};
